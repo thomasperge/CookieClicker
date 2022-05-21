@@ -1,0 +1,372 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://font/fontModel.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/BuyButton.png" type="Texture" id=2]
+[ext_resource path="res://Shop.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://font/Burbank Big Condensed Black 700.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 25
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = SubResource( 1 )
+
+[node name="Shop" type="Node2D"]
+position = Vector2( 0, 29 )
+script = ExtResource( 3 )
+
+[node name="Control" type="Control" parent="."]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Control"]
+position = Vector2( 170, -23.875 )
+scale = Vector2( 1, 0.612319 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Control"]
+margin_left = 3.0
+margin_top = -39.0
+margin_right = 337.0
+margin_bottom = -9.0
+custom_fonts/font = SubResource( 2 )
+text = "SHOP: COOKIE PER SECONDS"
+align = 1
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Scroll" type="ScrollContainer" parent="."]
+margin_right = 352.0
+margin_bottom = 325.0
+scroll_horizontal_enabled = false
+scroll_deadzone = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Box" type="VBoxContainer" parent="Scroll"]
+margin_right = 340.0
+margin_bottom = 507.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="Scroll/Box"]
+margin_right = 340.0
+margin_bottom = 69.0
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_CPS" type="Label" parent="Scroll/Box/TextureButton"]
+margin_left = 275.0
+margin_top = 46.0
+margin_right = 332.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.854902, 0.701961, 0.435294, 1 )
+text = "CPS +0.1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Price" type="Label" parent="Scroll/Box/TextureButton"]
+margin_left = 8.0
+margin_top = 46.0
+margin_right = 57.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 1 )
+text = "(price)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Lvl" type="Label" parent="Scroll/Box/TextureButton"]
+margin_left = 8.0
+margin_top = 6.0
+margin_right = 55.0
+margin_bottom = 26.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.321569, 0.792157, 0.317647, 1 )
+text = "(level)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton2" type="TextureButton" parent="Scroll/Box"]
+margin_top = 73.0
+margin_right = 340.0
+margin_bottom = 142.0
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_CPS" type="Label" parent="Scroll/Box/TextureButton2"]
+margin_left = 288.0
+margin_top = 45.0
+margin_right = 345.0
+margin_bottom = 65.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.854902, 0.701961, 0.435294, 1 )
+text = "CPS +1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Price" type="Label" parent="Scroll/Box/TextureButton2"]
+margin_left = 8.0
+margin_top = 46.0
+margin_right = 57.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 1 )
+text = "(price)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Lvl" type="Label" parent="Scroll/Box/TextureButton2"]
+margin_left = 8.0
+margin_top = 6.0
+margin_right = 55.0
+margin_bottom = 26.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.321569, 0.792157, 0.317647, 1 )
+text = "(level)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton3" type="TextureButton" parent="Scroll/Box"]
+margin_top = 146.0
+margin_right = 340.0
+margin_bottom = 215.0
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_CPS" type="Label" parent="Scroll/Box/TextureButton3"]
+margin_left = 278.0
+margin_top = 45.0
+margin_right = 335.0
+margin_bottom = 65.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.854902, 0.701961, 0.435294, 1 )
+text = "CPS +10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Price" type="Label" parent="Scroll/Box/TextureButton3"]
+margin_left = 8.0
+margin_top = 46.0
+margin_right = 57.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 1 )
+text = "(price)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Lvl" type="Label" parent="Scroll/Box/TextureButton3"]
+margin_left = 8.0
+margin_top = 6.0
+margin_right = 55.0
+margin_bottom = 26.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.321569, 0.792157, 0.317647, 1 )
+text = "(level)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton4" type="TextureButton" parent="Scroll/Box"]
+margin_top = 219.0
+margin_right = 340.0
+margin_bottom = 288.0
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_CPS" type="Label" parent="Scroll/Box/TextureButton4"]
+margin_left = 275.0
+margin_top = 45.0
+margin_right = 332.0
+margin_bottom = 65.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.854902, 0.701961, 0.435294, 1 )
+text = "CPS +45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Price" type="Label" parent="Scroll/Box/TextureButton4"]
+margin_left = 8.0
+margin_top = 46.0
+margin_right = 57.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 1 )
+text = "(price)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Lvl" type="Label" parent="Scroll/Box/TextureButton4"]
+margin_left = 8.0
+margin_top = 6.0
+margin_right = 55.0
+margin_bottom = 26.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.321569, 0.792157, 0.317647, 1 )
+text = "(level)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton5" type="TextureButton" parent="Scroll/Box"]
+margin_top = 292.0
+margin_right = 340.0
+margin_bottom = 361.0
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_CPS" type="Label" parent="Scroll/Box/TextureButton5"]
+margin_left = 268.0
+margin_top = 44.0
+margin_right = 330.0
+margin_bottom = 64.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.854902, 0.701961, 0.435294, 1 )
+text = "CPS +100"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Price" type="Label" parent="Scroll/Box/TextureButton5"]
+margin_left = 8.0
+margin_top = 46.0
+margin_right = 57.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 1 )
+text = "(price)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Lvl" type="Label" parent="Scroll/Box/TextureButton5"]
+margin_left = 8.0
+margin_top = 6.0
+margin_right = 55.0
+margin_bottom = 26.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.321569, 0.792157, 0.317647, 1 )
+text = "(level)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton6" type="TextureButton" parent="Scroll/Box"]
+margin_top = 365.0
+margin_right = 340.0
+margin_bottom = 434.0
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_CPS" type="Label" parent="Scroll/Box/TextureButton6"]
+margin_left = 267.0
+margin_top = 46.0
+margin_right = 331.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.854902, 0.701961, 0.435294, 1 )
+text = "CPS +500"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Price" type="Label" parent="Scroll/Box/TextureButton6"]
+margin_left = 8.0
+margin_top = 46.0
+margin_right = 57.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 1 )
+text = "(price)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Lvl" type="Label" parent="Scroll/Box/TextureButton6"]
+margin_left = 8.0
+margin_top = 6.0
+margin_right = 55.0
+margin_bottom = 26.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.321569, 0.792157, 0.317647, 1 )
+text = "(level)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton7" type="TextureButton" parent="Scroll/Box"]
+margin_top = 438.0
+margin_right = 340.0
+margin_bottom = 507.0
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_CPS" type="Label" parent="Scroll/Box/TextureButton7"]
+margin_left = 260.0
+margin_top = 46.0
+margin_right = 331.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.854902, 0.701961, 0.435294, 1 )
+text = "CPS +1250"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Price" type="Label" parent="Scroll/Box/TextureButton7"]
+margin_left = 8.0
+margin_top = 46.0
+margin_right = 57.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 1 )
+text = "(price)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label_Lvl" type="Label" parent="Scroll/Box/TextureButton7"]
+margin_left = 8.0
+margin_top = 6.0
+margin_right = 55.0
+margin_bottom = 26.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.321569, 0.792157, 0.317647, 1 )
+text = "(level)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Scroll/Box/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="Scroll/Box/TextureButton2" to="." method="_on_TextureButton2_pressed"]
+[connection signal="pressed" from="Scroll/Box/TextureButton3" to="." method="_on_TextureButton3_pressed"]
+[connection signal="pressed" from="Scroll/Box/TextureButton4" to="." method="_on_TextureButton4_pressed"]
+[connection signal="pressed" from="Scroll/Box/TextureButton5" to="." method="_on_TextureButton5_pressed"]
+[connection signal="pressed" from="Scroll/Box/TextureButton6" to="." method="_on_TextureButton6_pressed"]
+[connection signal="pressed" from="Scroll/Box/TextureButton7" to="." method="_on_TextureButton7_pressed"]
